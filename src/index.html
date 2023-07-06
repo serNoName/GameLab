@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Goals"
+})
+
+<body>
+    @@include('html/header.html', {})
+
+    <body class="games-template-default single single-games postid-1236 body theme-main woocommerce-js">
+
+        <div class="main">
+            <div class="mobile-menu">
+                <div id="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-header">
+                <div class="mobile-header__pseudo"></div>
+                <div class="mobile-header__logo">
+                    <a href="/" class="logo logo_mobile"><img
+                            src="https://alpha.serg.agency/wp-content/themes/main/img/logo_icon.png" alt="GameLab"
+                            width="32" height="32">GameLab</a>
+                </div>
+                <div class="mobile-header__notifications">
+                    <a href="/notifications/" class="notifications"><span class="icon"><svg width="20" height="22"
+                                viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6286 14.9989C18.5508 14.9052 18.4744 14.8114 18.3994 14.7209C17.3682 13.4736 16.7443 12.7208 16.7443 9.18969C16.7443 7.36156 16.3069 5.86156 15.4449 4.73656C14.8093 3.90547 13.95 3.275 12.8175 2.80906C12.803 2.80096 12.79 2.79032 12.7791 2.77766C12.3718 1.41359 11.2571 0.5 9.99989 0.5C8.74271 0.5 7.62849 1.41359 7.22114 2.77625C7.21027 2.78845 7.19744 2.79875 7.18318 2.80672C4.54036 3.89469 3.25599 5.98203 3.25599 9.18828C3.25599 12.7208 2.63302 13.4736 1.60083 14.7195C1.52583 14.81 1.44943 14.9019 1.37161 14.9975C1.17061 15.2399 1.04326 15.5348 1.00464 15.8473C0.966008 16.1598 1.01772 16.4769 1.15365 16.7609C1.44286 17.3703 2.05927 17.7486 2.76286 17.7486H17.2421C17.9424 17.7486 18.5546 17.3708 18.8447 16.7642C18.9813 16.4801 19.0335 16.1628 18.9952 15.8499C18.9569 15.537 18.8297 15.2417 18.6286 14.9989ZM9.99989 21.5C10.6773 21.4995 11.3418 21.3156 11.9232 20.9679C12.5045 20.6202 12.9809 20.1217 13.3018 19.5252C13.3169 19.4966 13.3244 19.4646 13.3234 19.4322C13.3225 19.3999 13.3133 19.3684 13.2966 19.3407C13.2799 19.313 13.2563 19.2901 13.2281 19.2742C13.2 19.2583 13.1682 19.25 13.1358 19.25H6.86489C6.83252 19.2499 6.80066 19.2582 6.77243 19.274C6.7442 19.2899 6.72055 19.3128 6.7038 19.3405C6.68704 19.3682 6.67774 19.3997 6.67681 19.4321C6.67588 19.4645 6.68335 19.4965 6.69849 19.5252C7.01936 20.1216 7.49567 20.6201 8.0769 20.9678C8.65813 21.3155 9.32261 21.4994 9.99989 21.5Z"
+                                    fill="#686A7E"></path>
+                            </svg></span><span class="notifications__number" style="display: none;"></span></a>
+                </div>
+            </div>
+
+            @@include('html/sidebar.html', {})
+            <div class="content">
+                <div class="content__heading">
+                    <div class="heading heading_button"
+                        style="background-image: url(https://alpha.serg.agency/wp-content/uploads/2023/03/biggest-games-2023-1671751913499-5.jpg);">
+                        <div class="heading__bg"></div>
+                        <div class="container">
+                            <div class="heading__title heading__title_button">
+                                <div class="heading__icon"
+                                    style="background: radial-gradient(100% 100% at 50% 0%, rgba(238, 238, 238, 0.38) 0%, rgba(255, 255, 255, 0.33) 0.01%, rgba(213, 213, 213, 0.11) 100%), url(https://alpha.serg.agency/wp-content/themes/main/img/icons/game.svg) no-repeat center center;">
+                                </div>
+                                <div class="heading__name">Goals </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__body">
+                    <div class="container">
+
+                        <div class="section section_feed">
+                            <div class="hubs-list">
+                                <div class="hubs-list__sorting">
+                                    <div class="dropdown dropdown_select">
+                                        <input type="hidden" class="dropdown__value">
+                                        <div class="dropdown__name"><img
+                                                src="https://alpha.serg.agency/wp-content/themes/main/img/icons/sort.svg"
+                                                alt="Sort by"> <span class="dropdown__title">Newest</span></div>
+                                        <div class="dropdown__content" style="display: none;">
+                                            <ul class="dropdown__list dropdown__list_reload" data-type="sort">
+                                                <li class="dropdown__item dropdown__item_active" data-value="">Newest
+                                                    (default)</li>
+                                                <li class="dropdown__item" data-value="tr">Trending</li>
+                                                <li class="dropdown__item" data-value="hf">Highest followed count</li>
+                                                <li class="dropdown__item" data-value="lf">Lowest follower count</li>
+                                                <li class="dropdown__item" data-value="hl">Highest GameLab level</li>
+                                                <li class="dropdown__item" data-value="ll">Lowest GameLab level</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hubs-list__filter">
+                                    <div class="filter-button filter-button_trigger"><img
+                                            src="https://alpha.serg.agency/wp-content/themes/main/img/icons/filter.svg"
+                                            alt="Filters"> Filters</div>
+                                </div>
+                                <div class="hubs-list__search">
+                                    <form role="search" method="get" id="search-form" class="search-form"
+                                        action="https://alpha.serg.agency/" autocomplete="off">
+                                        <input type="text" value="" name="s" id="s" class="search-form__input"
+                                            placeholder="Search" autocomplete="off" required="">
+                                        <button class="search-form__button" id="search-submit"><svg width="13"
+                                                height="13" viewBox="0 0 13 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.25 9.25L12.25 12.25" stroke="#686A7E" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M5.5 10.25C8.12335 10.25 10.25 8.12335 10.25 5.5C10.25 2.87665 8.12335 0.75 5.5 0.75C2.87665 0.75 0.75 2.87665 0.75 5.5C0.75 8.12335 2.87665 10.25 5.5 10.25Z"
+                                                    stroke="#686A7E" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg></button>
+                                    </form>
+                                </div>
+                                <div class="hubs-list__filters" style="display: none;">
+
+                                    <div class="dropdown dropdown_select">
+                                        <input type="hidden" class="dropdown__value">
+                                        <div class="dropdown__name">
+                                            <div class="dropdown__title">Status</div>
+                                        </div>
+                                        <div class="dropdown__content" style="display: none;">
+                                            <ul class="dropdown__list dropdown__list_reload" data-type="status">
+                                                <li class="dropdown__item" data-value="id">In development</li>
+                                                <li class="dropdown__item" data-value="ea">Early Access</li>
+                                                <li class="dropdown__item" data-value="nr">New releases</li>
+                                                <li class="dropdown__item" data-value="rl">Released</li>
+                                                <li class="dropdown__item" data-value="cl">Cancelled</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropdown_select">
+                                        <input type="hidden" class="dropdown__value">
+                                        <div class="dropdown__name">
+                                            <div class="dropdown__title">Game Platform</div>
+                                        </div>
+                                        <div class="dropdown__content" style="display: none;">
+                                            <ul class="dropdown__list dropdown__list_reload" data-type="platform">
+                                                <li class="dropdown__item" data-value="dk">For Desktops</li>
+                                                <li class="dropdown__item" data-value="cs">For Consoles</li>
+                                                <li class="dropdown__item" data-value="mb">For Mobiles</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropdown_select">
+                                        <input type="hidden" class="dropdown__value">
+                                        <div class="dropdown__name">
+                                            <div class="dropdown__title">Tags</div>
+                                        </div>
+                                        <div class="dropdown__content" style="display: none;">
+                                            <ul class="dropdown__list dropdown__list_reload" data-type="tags">
+                                                <li class="dropdown__item" data-value="rpg">RPG</li>
+                                                <li class="dropdown__item" data-value="action">Action</li>
+                                                <li class="dropdown__item" data-value="mmo">MMO</li>
+                                                <li class="dropdown__item" data-value="another-tag">Another tag</li>
+                                                <li class="dropdown__item" data-value="action1">Action1</li>
+                                                <li class="dropdown__item" data-value="action2">Action2</li>
+                                                <li class="dropdown__item" data-value="strategy">Strategy</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="filter-button filter-button_checkbox" data-type="free"><span
+                                            class="checkbox"><span class="checkbox__tick"></span></span> Free</div>
+                                </div>
+                            </div>
+
+                            <div class="archive archive_hubs">
+                                <div class="card card_goal card_games card_complete">
+                                    <div class="card__image">
+                                        <img src="https://images.pexels.com/photos/19677/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
+                                        <a href="#" class="card__gradient"></a>
+                                    </div>
+                                    <div class="card__container">
+                                        <div class="card__content">
+                                            <a href="#" class="card__link"></a>
+
+                                            <div class="card__title card__title_hub">
+                                                <a href="#" class="badge badge_green">Reached</a>
+                                                <a href="#" class="badge">Monthly goal</a>
+                                                <a href="#" class="user-card user-card_hub">
+                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit</span>
+                                                </a>
+                                            </div>
+                                            <div class="card__short-info">
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/shield.png" alt="shield" width="20">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        Hub title
+                                                    </div>
+                                                    <div class="icon-number__icon icon-number__icon_right">
+                                                        <img src="@img/ico/level-1.png" alt="level 1" width="24">
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/people.svg" alt="People" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        3281 backers
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/timer.svg" alt="timer" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        12 days left
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        All or nothing
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
+                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
+                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
+                                            <div class="card__bottom">
+                                                <div class="loadbar loadbar_card">
+                                                    <div class="loadbar__field">
+                                                        <div class="loadbar__fill" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="loadbar__percentage">100%</div>
+                                                </div>
+                                                <div class="card__summary">
+                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
+                                                    <div class="card__summary-target">Target: <span>$100,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card_goal card_games">
+                                    <div class="card__image">
+                                        <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
+                                        <a href="#" class="card__gradient"></a>
+                                    </div>
+                                    <div class="card__container">
+                                        <div class="card__content">
+                                            <a href="#" class="card__link"></a>
+
+                                            <div class="card__title card__title_hub">
+                                                <a href="#" class="badge">Crowdfunding</a>
+                                                <a href="#" class="user-card user-card_hub">
+                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit</span>
+                                                </a>
+                                            </div>
+                                            <div class="card__short-info">
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/shield.png" alt="shield" width="20">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        Hub title
+                                                    </div>
+                                                    <div class="icon-number__icon icon-number__icon_right">
+                                                        <img src="@img/ico/level-1.png" alt="level 1" width="24">
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/people.svg" alt="People" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        3281 backers
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/timer.svg" alt="timer" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        12 days left
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        All or nothing
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
+                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
+                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
+                                            <div class="card__bottom">
+                                                <div class="loadbar loadbar_card">
+                                                    <div class="loadbar__field">
+                                                        <div class="loadbar__fill" style="width: 63%;"></div>
+                                                    </div>
+                                                    <div class="loadbar__percentage">63%</div>
+                                                </div>
+                                                <div class="card__summary">
+                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
+                                                    <div class="card__summary-target">Target: <span>$100,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card_goal card_games card_complete">
+                                    <div class="card__image">
+                                        <img src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
+                                        <a href="#" class="card__gradient"></a>
+                                    </div>
+                                    <div class="card__container">
+                                        <div class="card__content">
+                                            <a href="#" class="card__link"></a>
+
+                                            <div class="card__title card__title_hub">
+                                                <a href="#" class="badge badge_green">Reached</a>
+                                                <a href="#" class="badge">Monthly goal</a>
+                                                <a href="#" class="user-card user-card_hub">
+                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit</span>
+                                                </a>
+                                            </div>
+                                            <div class="card__short-info">
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/shield.png" alt="shield" width="20">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        Hub title
+                                                    </div>
+                                                    <div class="icon-number__icon icon-number__icon_right">
+                                                        <img src="@img/ico/level-1.png" alt="level 1" width="24">
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/people.svg" alt="People" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        3281 backers
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/timer.svg" alt="timer" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        12 days left
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        All or nothing
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
+                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
+                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
+                                            <div class="card__bottom">
+                                                <div class="loadbar loadbar_card">
+                                                    <div class="loadbar__field">
+                                                        <div class="loadbar__fill" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="loadbar__percentage">100%</div>
+                                                </div>
+                                                <div class="card__summary">
+                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
+                                                    <div class="card__summary-target">Target: <span>$100,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card_goal card_games">
+                                    <div class="card__image">
+                                        <img src="https://images.pexels.com/photos/7915446/pexels-photo-7915446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
+                                        <a href="#" class="card__gradient"></a>
+                                    </div>
+                                    <div class="card__container">
+                                        <div class="card__content">
+                                            <a href="#" class="card__link"></a>
+
+                                            <div class="card__title card__title_hub">
+                                                <a href="#" class="badge">Crowdfunding</a>
+                                                <a href="#" class="user-card user-card_hub">
+                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit</span>
+                                                </a>
+                                            </div>
+                                            <div class="card__short-info">
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/shield.png" alt="shield" width="20">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        Hub title
+                                                    </div>
+                                                    <div class="icon-number__icon icon-number__icon_right">
+                                                        <img src="@img/ico/level-1.png" alt="level 1" width="24">
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/people.svg" alt="People" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        3281 backers
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/timer.svg" alt="timer" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        12 days left
+                                                    </div>
+                                                </div>
+                                                <div class="icon-number icon-number_card">
+                                                    <div class="icon-number__icon">
+                                                        <img src="@img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
+                                                    </div>
+                                                    <div class="icon-number__text">
+                                                        All or nothing
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
+                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
+                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
+                                            <div class="card__bottom">
+                                                <div class="loadbar loadbar_card">
+                                                    <div class="loadbar__field">
+                                                        <div class="loadbar__fill" style="width: 24%;"></div>
+                                                    </div>
+                                                    <div class="loadbar__percentage">24%</div>
+                                                </div>
+                                                <div class="card__summary">
+                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
+                                                    <div class="card__summary-target">Target: <span>$100,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pagination">
+                                <a href="#" data-max_pages="3" data-paged="1" data-archive="games" class="showmore">Show
+                                    more <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.226914 0.969743C0.36756 0.829139 0.558291 0.750153 0.757164 0.750153C0.956037 0.750153 1.14677 0.829139 1.28741 0.969743L4.99991 4.68224L8.71241 0.969743C8.85387 0.833124 9.04332 0.757528 9.23997 0.759237C9.43661 0.760946 9.62472 0.839822 9.76378 0.978878C9.90283 1.11793 9.98171 1.30604 9.98342 1.50269C9.98513 1.69934 9.90953 1.88879 9.77291 2.03024L5.53016 6.27299C5.38952 6.4136 5.19879 6.49258 4.99991 6.49258C4.80104 6.49258 4.61031 6.4136 4.46966 6.27299L0.226914 2.03024C0.0863108 1.8896 0.00732422 1.69887 0.00732422 1.49999C0.00732422 1.30112 0.0863108 1.11039 0.226914 0.969743Z"
+                                            fill="#A9AAB6"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content__footer">
+                    @@include('html/footer.html', {})
+                </div>
+            </div>
+
+            @@include('html/pop-up.html', {})
+            <script>jQuery("#hubID").val("1236"); jQuery("#cpw-1").val("15.00").attr("type", "number").attr("min", "1").attr("max", "100000").attr("step", "0.01").attr("placeholder", "Minimum $1");</script>
+        </div>
+
+
+        <script type="text/javascript">
+            (function () {
+                var c = document.body.className;
+                c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+                document.body.className = c;
+            })();
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7"
+            id="swv-js"></script>
+        <script type="text/javascript" id="contact-form-7-js-extra">
+            /* <![CDATA[ */
+            var wpcf7 = { "api": { "root": "https:\/\/alpha.serg.agency\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7"
+            id="contact-form-7-js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js"
+            id="jQueryMobile-js"></script>
+        <script type="text/javascript" src="https://alpha.serg.agency/wp-content/themes/main/js/scripts.js"
+            id="main-js"></script>
+        <script type="text/javascript" id="ajax-followed-js-extra">
+            /* <![CDATA[ */
+            var myAjax = { "ajaxurl": "https:\/\/alpha.serg.agency\/wp-admin\/admin-ajax.php" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/themes/main/js/ajax-followed.js?ver=1.0.0"
+            id="ajax-followed-js"></script>
+        <script type="text/javascript" id="ajax-loadmore-js-extra">
+            /* <![CDATA[ */
+            var myAjax = { "ajaxurl": "https:\/\/alpha.serg.agency\/wp-admin\/admin-ajax.php" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/themes/main/js/ajax-loadmore.js?ver=1.0.0"
+            id="ajax-loadmore-js"></script>
+        <script type="text/javascript" id="wc-single-product-js-extra">
+            /* <![CDATA[ */
+            var wc_single_product_params = { "i18n_required_rating_text": "Please select a rating", "review_rating_required": "yes", "flexslider": { "rtl": false, "animation": "slide", "smoothHeight": true, "directionNav": false, "controlNav": "thumbnails", "slideshow": false, "animationSpeed": 500, "animationLoop": false, "allowOneSlide": false }, "zoom_enabled": "", "zoom_options": [], "photoswipe_enabled": "", "photoswipe_options": { "shareEl": false, "closeOnScroll": false, "history": false, "hideAnimationDuration": 0, "showAnimationDuration": 0 }, "flexslider_enabled": "" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=7.8.1"
+            id="wc-single-product-js"></script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2"
+            id="accounting-js"></script>
+        <script type="text/javascript" id="woocommerce-cpw-js-extra">
+            /* <![CDATA[ */
+            var woocommerce_cpw_params = { "currency_format_num_decimals": "2", "currency_format_symbol": "$", "currency_format_decimal_sep": ".", "currency_format_thousand_sep": ",", "currency_format": "%s%v", "annual_price_factors": { "day": "365", "week": "52", "month": "12", "year": "1" }, "i18n_subscription_string": "%price \/ %period", "trim_zeros": "" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/custom-price-for-woocommerce/vendor_prefixed/wpdesk/custom-price-for-woocommerce-core//assets/js/frontend/front.js?ver=1688635607"
+            id="woocommerce-cpw-js"></script>
+
+
+    </body>
+
+
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
