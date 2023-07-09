@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script  src="https://alpha.serg.agency/wp-includes/js/jquery/jquery.min.js?ver=3.6.4"></script>
-    <title>Goals - GameLab</title>
+    <title>Goal - GameLab</title>
 </head>
 
 <body>
@@ -150,442 +150,336 @@
     </div>
 </div>
             <div class="content">
-                <div class="content__heading">
-                    <div class="heading heading_button"
-                        style="background-image: url(https://alpha.serg.agency/wp-content/uploads/2023/03/biggest-games-2023-1671751913499-5.jpg);">
-                        <div class="heading__bg"></div>
-                        <div class="container">
-                            <div class="heading__title heading__title_button">
-                                <div class="heading__icon"
-                                    style="background: radial-gradient(100% 100% at 50% 0%, rgba(238, 238, 238, 0.38) 0%, rgba(255, 255, 255, 0.33) 0.01%, rgba(213, 213, 213, 0.11) 100%), url(https://alpha.serg.agency/wp-content/themes/main/img/icons/game.svg) no-repeat center center;">
+                <div class="content__slider content__slider_hub content__slider_sticky">
+                    <div class="hero-bg hero-bg_active"
+                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 31.05%, rgb(25 25 34) 100%), url(https://alpha.serg.agency/wp-content/uploads/2023/03/bg-2048x480.jpeg) no-repeat center top">
+                    </div>
+                    <div id="hero" class="hero">
+                        <div class="hero__information hero__information_active">
+                            <div class="hero__subtitle">
+                                Monthly goal
+                            </div>
+                            <div class="hero__title">
+                                <span class="hero__name">Goal name</span>
+                            </div>
+                            <div class="hero__info">
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="assets/img/ico/shield.png" alt="shield" width="20">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        Hub title
+                                    </div>
+                                    <div class="icon-number__icon icon-number__icon_right">
+                                        <img src="assets/img/ico/level-1.png" alt="level 1" width="24">
+                                    </div>
                                 </div>
-                                <div class="heading__name">Goals </div>
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="assets/img/ico/people.svg" alt="People" width="16">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        3281 backers
+                                    </div>
+                                </div>
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="assets/img/ico/timer.svg" alt="timer" width="16">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        12 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loadbar loadbar_hero loadbar_fail">
+                                <div class="loadbar__field">
+                                    <div class="loadbar__fill" style="width: 45%;"></div>
+                                    <div class="loadbar__title">$123,000 / $150,000%</div>
+                                </div>
+                                <div class="loadbar__status">
+                                    72% raised of Monthly goal
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="content__body">
                     <div class="container">
 
-                        <div class="section section_feed">
-                            <div class="hubs-list">
-                                <div class="hubs-list__sorting">
-                                    <div class="dropdown dropdown_select">
-                                        <input type="hidden" class="dropdown__value">
-                                        <div class="dropdown__name"><img
-                                                src="https://alpha.serg.agency/wp-content/themes/main/img/icons/sort.svg"
-                                                alt="Sort by"> <span class="dropdown__title">Newest</span></div>
-                                        <div class="dropdown__content" style="display: none;">
-                                            <ul class="dropdown__list dropdown__list_reload" data-type="sort">
-                                                <li class="dropdown__item dropdown__item_active" data-value="">Newest
-                                                    (default)</li>
-                                                <li class="dropdown__item" data-value="tr">Trending</li>
-                                                <li class="dropdown__item" data-value="hf">Highest followed count</li>
-                                                <li class="dropdown__item" data-value="lf">Lowest follower count</li>
-                                                <li class="dropdown__item" data-value="hl">Highest GameLab level</li>
-                                                <li class="dropdown__item" data-value="ll">Lowest GameLab level</li>
-                                            </ul>
+                        <div class="section section_goal">
+                            <div class="goal">
+                                <aside class="goal__aside goal__aside_points">
+                                    <div class="progress-bar progress-bar_fail">
+                                        <div class="progress-bar__title">
+                                            Goal milestones
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="hubs-list__filter">
-                                    <div class="filter-button filter-button_trigger"><img
-                                            src="https://alpha.serg.agency/wp-content/themes/main/img/icons/filter.svg"
-                                            alt="Filters"> Filters</div>
-                                </div>
-                                <div class="hubs-list__search">
-                                    <form role="search" method="get" id="search-form" class="search-form"
-                                        action="https://alpha.serg.agency/" autocomplete="off">
-                                        <input type="text" value="" name="s" id="s" class="search-form__input"
-                                            placeholder="Search" autocomplete="off" required="">
-                                        <button class="search-form__button" id="search-submit"><svg width="13"
-                                                height="13" viewBox="0 0 13 13" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.25 9.25L12.25 12.25" stroke="#686A7E" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path
-                                                    d="M5.5 10.25C8.12335 10.25 10.25 8.12335 10.25 5.5C10.25 2.87665 8.12335 0.75 5.5 0.75C2.87665 0.75 0.75 2.87665 0.75 5.5C0.75 8.12335 2.87665 10.25 5.5 10.25Z"
-                                                    stroke="#686A7E" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                            </svg></button>
-                                    </form>
-                                </div>
-                                <div class="hubs-list__filters" style="display: none;">
-
-                                    <div class="dropdown dropdown_select">
-                                        <input type="hidden" class="dropdown__value">
-                                        <div class="dropdown__name">
-                                            <div class="dropdown__title">Status</div>
-                                        </div>
-                                        <div class="dropdown__content" style="display: none;">
-                                            <ul class="dropdown__list dropdown__list_reload" data-type="status">
-                                                <li class="dropdown__item" data-value="id">In development</li>
-                                                <li class="dropdown__item" data-value="ea">Early Access</li>
-                                                <li class="dropdown__item" data-value="nr">New releases</li>
-                                                <li class="dropdown__item" data-value="rl">Released</li>
-                                                <li class="dropdown__item" data-value="cl">Cancelled</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown dropdown_select">
-                                        <input type="hidden" class="dropdown__value">
-                                        <div class="dropdown__name">
-                                            <div class="dropdown__title">Game Platform</div>
-                                        </div>
-                                        <div class="dropdown__content" style="display: none;">
-                                            <ul class="dropdown__list dropdown__list_reload" data-type="platform">
-                                                <li class="dropdown__item" data-value="dk">For Desktops</li>
-                                                <li class="dropdown__item" data-value="cs">For Consoles</li>
-                                                <li class="dropdown__item" data-value="mb">For Mobiles</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown dropdown_select">
-                                        <input type="hidden" class="dropdown__value">
-                                        <div class="dropdown__name">
-                                            <div class="dropdown__title">Tags</div>
-                                        </div>
-                                        <div class="dropdown__content" style="display: none;">
-                                            <ul class="dropdown__list dropdown__list_reload" data-type="tags">
-                                                <li class="dropdown__item" data-value="rpg">RPG</li>
-                                                <li class="dropdown__item" data-value="action">Action</li>
-                                                <li class="dropdown__item" data-value="mmo">MMO</li>
-                                                <li class="dropdown__item" data-value="another-tag">Another tag</li>
-                                                <li class="dropdown__item" data-value="action1">Action1</li>
-                                                <li class="dropdown__item" data-value="action2">Action2</li>
-                                                <li class="dropdown__item" data-value="strategy">Strategy</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="filter-button filter-button_checkbox" data-type="free"><span
-                                            class="checkbox"><span class="checkbox__tick"></span></span> Free</div>
-                                </div>
-                            </div>
-
-                            <div class="archive archive_hubs">
-                                <div class="card card_goal card_games card_complete">
-                                    <div class="card__image">
-                                        <img src="https://images.pexels.com/photos/19677/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
-                                        <a href="#" class="card__gradient"></a>
-                                    </div>
-                                    <div class="card__container">
-                                        <div class="card__content">
-                                            <a href="#" class="card__link"></a>
-
-                                            <div class="card__title card__title_hub">
-                                                <a href="#" class="badge badge_green">Reached</a>
-                                                <a href="#" class="badge">Monthly goal</a>
-                                                <a href="#" class="user-card user-card_hub">
-                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
-                                                        consectetur adipiscing elit</span>
-                                                </a>
+                                        <div class="progress-bar__content">
+                                            <div class="progress-bar__field">
+                                                <div class="progress-bar__fill" style="height: 38px;"></div>
                                             </div>
-                                            <div class="card__short-info">
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/shield.png" alt="shield" width="20">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        Hub title
-                                                    </div>
-                                                    <div class="icon-number__icon icon-number__icon_right">
-                                                        <img src="assets/img/ico/level-1.png" alt="level 1" width="24">
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/people.svg" alt="People" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        3281 backers
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/timer.svg" alt="timer" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        12 days left
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        All or nothing
+                                            <div class="progress-bar__steps">
+                                                <div class="progress-bar__step progress-bar__step_complete">
+                                                    <div class="progress-bar__percentage" style="height: calc(100% + 4px);"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$100,000</div>
+                                                    <div class="progress-bar__name">Lorem ipsum dolor sit amet</div>
+                                                    <div class="milestone milestone_fail">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="assets/img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar loadbar_milestone loadbar_fail">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <div class="progress-bar__step progress-bar__step_complete">
+                                                    <div class="progress-bar__percentage" style="height: calc(54% + 4px);"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$150,000</div>
+                                                    <div class="progress-bar__name">Quisque venenatis, mauris a cursus egestas</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="assets/img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step ">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$250,000</div>
+                                                    <div class="progress-bar__name">Sed ultricies ipsum in ex volutpat</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="assets/img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step progress-bar__step_fail">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$300,000</div>
+                                                    <div class="progress-bar__name">Mauris sagittis ultrices malesuada. Nunc eu sagittis mauris</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="assets/img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$450,000</div>
+                                                    <div class="progress-bar__name">Duis sit amet laoreet nibh</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="assets/img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-
-                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
-                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
-                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
-                                            <div class="card__bottom">
-                                                <div class="loadbar loadbar_card">
-                                                    <div class="loadbar__field">
-                                                        <div class="loadbar__fill" style="width: 100%;"></div>
-                                                    </div>
-                                                    <div class="loadbar__percentage">100%</div>
-                                                </div>
-                                                <div class="card__summary">
-                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
-                                                    <div class="card__summary-target">Target: <span>$100,000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card_goal card_games">
-                                    <div class="card__image">
-                                        <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
-                                        <a href="#" class="card__gradient"></a>
-                                    </div>
-                                    <div class="card__container">
-                                        <div class="card__content">
-                                            <a href="#" class="card__link"></a>
-
-                                            <div class="card__title card__title_hub">
-                                                <a href="#" class="badge">Crowdfunding</a>
-                                                <a href="#" class="user-card user-card_hub">
-                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
-                                                        consectetur adipiscing elit</span>
-                                                </a>
-                                            </div>
-                                            <div class="card__short-info">
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/shield.png" alt="shield" width="20">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        Hub title
-                                                    </div>
-                                                    <div class="icon-number__icon icon-number__icon_right">
-                                                        <img src="assets/img/ico/level-1.png" alt="level 1" width="24">
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/people.svg" alt="People" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        3281 backers
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/timer.svg" alt="timer" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        12 days left
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        All or nothing
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
-                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
-                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
-                                            <div class="card__bottom">
-                                                <div class="loadbar loadbar_card">
-                                                    <div class="loadbar__field">
-                                                        <div class="loadbar__fill" style="width: 63%;"></div>
-                                                    </div>
-                                                    <div class="loadbar__percentage">63%</div>
-                                                </div>
-                                                <div class="card__summary">
-                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
-                                                    <div class="card__summary-target">Target: <span>$100,000</span>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card card_goal card_games card_complete">
-                                    <div class="card__image">
-                                        <img src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
-                                        <a href="#" class="card__gradient"></a>
+                                </aside>
+                                <article class="goal__article">
+                                    <div class="goal__text">
+                                        <h2>Lorem ipsum dolor</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo a
+                                            mauris fermentum sodales. Cras sed nulla placerat, venenatis odio quis,
+                                            faucibus urna. Integer id suscipit nisl. Integer eu laoreet mauris. Nunc
+                                            molestie eu orci eu tincidunt. Sed feugiat ultrices dui sit amet vulputate.
+                                            Morbi eget iaculis dui. Curabitur euismod lobortis ultricies. Integer a elit
+                                            imperdiet, dictum urna at, dignissim nisl. Vivamus vel venenatis tortor.
+                                            Maecenas et nibh vitae ante euismod placerat nec in risus.</p>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                                        <h2>Lorem ipsum dolor</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo a
+                                            mauris fermentum sodales. Cras sed nulla placerat, venenatis odio quis,
+                                            faucibus urna. Integer id suscipit nisl. Integer eu laoreet mauris. Nunc
+                                            molestie eu orci eu tincidunt. Sed feugiat ultrices dui sit amet vulputate.
+                                            Morbi eget iaculis dui. Curabitur euismod lobortis ultricies. Integer a elit
+                                            imperdiet, dictum urna at, dignissim nisl. Vivamus vel venenatis tortor.
+                                            Maecenas et nibh vitae ante euismod placerat nec in risus.</p>
                                     </div>
-                                    <div class="card__container">
-                                        <div class="card__content">
-                                            <a href="#" class="card__link"></a>
 
-                                            <div class="card__title card__title_hub">
-                                                <a href="#" class="badge badge_green">Reached</a>
-                                                <a href="#" class="badge">Monthly goal</a>
-                                                <a href="#" class="user-card user-card_hub">
-                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
-                                                        consectetur adipiscing elit</span>
-                                                </a>
+                                </article>
+                                <aside class="goal__aside">
+                                    <div class="top-donators">
+                                        <div class="top-donators__title">Top-15 donators</div>
+                                        <div class="top-donators__donators">
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
                                             </div>
-                                            <div class="card__short-info">
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/shield.png" alt="shield" width="20">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        Hub title
-                                                    </div>
-                                                    <div class="icon-number__icon icon-number__icon_right">
-                                                        <img src="assets/img/ico/level-1.png" alt="level 1" width="24">
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/people.svg" alt="People" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        3281 backers
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/timer.svg" alt="timer" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        12 days left
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        All or nothing
-                                                    </div>
-                                                </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
                                             </div>
-
-
-                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
-                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
-                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
-                                            <div class="card__bottom">
-                                                <div class="loadbar loadbar_card">
-                                                    <div class="loadbar__field">
-                                                        <div class="loadbar__fill" style="width: 100%;"></div>
-                                                    </div>
-                                                    <div class="loadbar__percentage">100%</div>
-                                                </div>
-                                                <div class="card__summary">
-                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
-                                                    <div class="card__summary-target">Target: <span>$100,000</span>
-                                                    </div>
-                                                </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
                                             </div>
                                         </div>
+                                        <button class="top-donators__button">
+                                            See all
+                                            <img src="assets/img/ico/arrow-down-bold.svg" alt="arrow" width="12">
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="card card_goal card_games">
-                                    <div class="card__image">
-                                        <img src="https://images.pexels.com/photos/7915446/pexels-photo-7915446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="Another game" class="lazy entered loaded" data-ll-status="loaded">
-                                        <a href="#" class="card__gradient"></a>
+                                    <div class="mailing">
+                                        <div class="mailing__title">Free donation</div>
+                                        <div class="mailing__subtitle">Support the hub for no reward, just because it speaks to you.</div>
+                                        <input type="text" placeholder="Enter amount">
+                                        <a href="#" class="button button_pink popup-trigger" data-popup="donate" data-hub="1236" data-save="fc_c2"><span class="button__text"><img src="https://alpha.serg.agency/wp-content/themes/main/img/icons/donate.svg" style="margin-top: -5px;vertical-align:middle"> Donate</span></a>
                                     </div>
-                                    <div class="card__container">
-                                        <div class="card__content">
-                                            <a href="#" class="card__link"></a>
-
-                                            <div class="card__title card__title_hub">
-                                                <a href="#" class="badge">Crowdfunding</a>
-                                                <a href="#" class="user-card user-card_hub">
-                                                    <span class="user-card__name">Lorem ipsum dolor sit amet,
-                                                        consectetur adipiscing elit</span>
-                                                </a>
-                                            </div>
-                                            <div class="card__short-info">
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/shield.png" alt="shield" width="20">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        Hub title
-                                                    </div>
-                                                    <div class="icon-number__icon icon-number__icon_right">
-                                                        <img src="assets/img/ico/level-1.png" alt="level 1" width="24">
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/people.svg" alt="People" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        3281 backers
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/timer.svg" alt="timer" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        12 days left
-                                                    </div>
-                                                </div>
-                                                <div class="icon-number icon-number_card">
-                                                    <div class="icon-number__icon">
-                                                        <img src="assets/img/ico/full-money-bag.svg" alt="full-money-bag" width="16">
-                                                    </div>
-                                                    <div class="icon-number__text">
-                                                        All or nothing
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <a href="#" class="card__info card__info_text">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nunc posuere, purus vitae bibendum
-                                                eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed
-                                                eros. Maecenas imperdiet et dolor blandit scelerisque.</a>
-                                            <div class="card__bottom">
-                                                <div class="loadbar loadbar_card">
-                                                    <div class="loadbar__field">
-                                                        <div class="loadbar__fill" style="width: 24%;"></div>
-                                                    </div>
-                                                    <div class="loadbar__percentage">24%</div>
-                                                </div>
-                                                <div class="card__summary">
-                                                    <div class="card__summary-raised">Raised: <span>$63,000</span></div>
-                                                    <div class="card__summary-target">Target: <span>$100,000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="pagination">
-                                <a href="#" data-max_pages="3" data-paged="1" data-archive="games" class="showmore">Show
-                                    more <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.226914 0.969743C0.36756 0.829139 0.558291 0.750153 0.757164 0.750153C0.956037 0.750153 1.14677 0.829139 1.28741 0.969743L4.99991 4.68224L8.71241 0.969743C8.85387 0.833124 9.04332 0.757528 9.23997 0.759237C9.43661 0.760946 9.62472 0.839822 9.76378 0.978878C9.90283 1.11793 9.98171 1.30604 9.98342 1.50269C9.98513 1.69934 9.90953 1.88879 9.77291 2.03024L5.53016 6.27299C5.38952 6.4136 5.19879 6.49258 4.99991 6.49258C4.80104 6.49258 4.61031 6.4136 4.46966 6.27299L0.226914 2.03024C0.0863108 1.8896 0.00732422 1.69887 0.00732422 1.49999C0.00732422 1.30112 0.0863108 1.11039 0.226914 0.969743Z"
-                                            fill="#A9AAB6"></path>
-                                    </svg></a>
+                                </aside>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="content__footer">
-                    <div class="content__footer">
+
+            </div>
+
+            <script>jQuery("#hubID").val("1236"); jQuery("#cpw-1").val("15.00").attr("type", "number").attr("min", "1").attr("max", "100000").attr("step", "0.01").attr("placeholder", "Minimum $1");</script>
+        </div>
+        <div class="content__footer">
     <footer class="footer">
         <div class="footer__body container">
             <div class="footer__left">
@@ -608,10 +502,7 @@
     </footer>
 </div>
 
-                </div>
-            </div>
-
-            <div id="report" class="popup popup_single">
+        <div id="report" class="popup popup_single">
     <div class="popup__bg"><span class="popup__close"></span>
     </div>
     <div class="popup__body">
@@ -1227,8 +1118,6 @@
         </div>
     </div>
 </div>
-            <script>jQuery("#hubID").val("1236"); jQuery("#cpw-1").val("15.00").attr("type", "number").attr("min", "1").attr("max", "100000").attr("step", "0.01").attr("placeholder", "Minimum $1");</script>
-        </div>
 
 
         <script type="text/javascript">

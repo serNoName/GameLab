@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Goal"
+})
+
+<body>
+    @@include('html/header.html', {})
+
+    <body class="games-template-default single single-games postid-1236 body theme-main woocommerce-js">
+
+        <div class="main">
+            <div class="mobile-menu">
+                <div id="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-header">
+                <div class="mobile-header__pseudo"></div>
+                <div class="mobile-header__logo">
+                    <a href="/" class="logo logo_mobile"><img
+                            src="https://alpha.serg.agency/wp-content/themes/main/img/logo_icon.png" alt="GameLab"
+                            width="32" height="32">GameLab</a>
+                </div>
+                <div class="mobile-header__notifications">
+                    <a href="/notifications/" class="notifications"><span class="icon"><svg width="20" height="22"
+                                viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6286 14.9989C18.5508 14.9052 18.4744 14.8114 18.3994 14.7209C17.3682 13.4736 16.7443 12.7208 16.7443 9.18969C16.7443 7.36156 16.3069 5.86156 15.4449 4.73656C14.8093 3.90547 13.95 3.275 12.8175 2.80906C12.803 2.80096 12.79 2.79032 12.7791 2.77766C12.3718 1.41359 11.2571 0.5 9.99989 0.5C8.74271 0.5 7.62849 1.41359 7.22114 2.77625C7.21027 2.78845 7.19744 2.79875 7.18318 2.80672C4.54036 3.89469 3.25599 5.98203 3.25599 9.18828C3.25599 12.7208 2.63302 13.4736 1.60083 14.7195C1.52583 14.81 1.44943 14.9019 1.37161 14.9975C1.17061 15.2399 1.04326 15.5348 1.00464 15.8473C0.966008 16.1598 1.01772 16.4769 1.15365 16.7609C1.44286 17.3703 2.05927 17.7486 2.76286 17.7486H17.2421C17.9424 17.7486 18.5546 17.3708 18.8447 16.7642C18.9813 16.4801 19.0335 16.1628 18.9952 15.8499C18.9569 15.537 18.8297 15.2417 18.6286 14.9989ZM9.99989 21.5C10.6773 21.4995 11.3418 21.3156 11.9232 20.9679C12.5045 20.6202 12.9809 20.1217 13.3018 19.5252C13.3169 19.4966 13.3244 19.4646 13.3234 19.4322C13.3225 19.3999 13.3133 19.3684 13.2966 19.3407C13.2799 19.313 13.2563 19.2901 13.2281 19.2742C13.2 19.2583 13.1682 19.25 13.1358 19.25H6.86489C6.83252 19.2499 6.80066 19.2582 6.77243 19.274C6.7442 19.2899 6.72055 19.3128 6.7038 19.3405C6.68704 19.3682 6.67774 19.3997 6.67681 19.4321C6.67588 19.4645 6.68335 19.4965 6.69849 19.5252C7.01936 20.1216 7.49567 20.6201 8.0769 20.9678C8.65813 21.3155 9.32261 21.4994 9.99989 21.5Z"
+                                    fill="#686A7E"></path>
+                            </svg></span><span class="notifications__number" style="display: none;"></span></a>
+                </div>
+            </div>
+
+            @@include('html/sidebar.html', {})
+            <div class="content">
+                <div class="content__slider content__slider_hub content__slider_sticky">
+                    <div class="hero-bg hero-bg_active"
+                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 31.05%, rgb(25 25 34) 100%), url(https://alpha.serg.agency/wp-content/uploads/2023/03/bg-2048x480.jpeg) no-repeat center top">
+                    </div>
+                    <div id="hero" class="hero">
+                        <div class="hero__information hero__information_active">
+                            <div class="hero__subtitle">
+                                Monthly goal
+                            </div>
+                            <div class="hero__title">
+                                <span class="hero__name">Goal name</span>
+                            </div>
+                            <div class="hero__info">
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="@img/ico/shield.png" alt="shield" width="20">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        Hub title
+                                    </div>
+                                    <div class="icon-number__icon icon-number__icon_right">
+                                        <img src="@img/ico/level-1.png" alt="level 1" width="24">
+                                    </div>
+                                </div>
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="@img/ico/people.svg" alt="People" width="16">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        3281 backers
+                                    </div>
+                                </div>
+                                <div class="icon-number icon-number_hero">
+                                    <div class="icon-number__icon">
+                                        <img src="@img/ico/timer.svg" alt="timer" width="16">
+                                    </div>
+                                    <div class="icon-number__text">
+                                        12 days left
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loadbar loadbar_hero loadbar_fail">
+                                <div class="loadbar__field">
+                                    <div class="loadbar__fill" style="width: 45%;"></div>
+                                    <div class="loadbar__title">$123,000 / $150,000%</div>
+                                </div>
+                                <div class="loadbar__status">
+                                    72% raised of Monthly goal
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__body">
+                    <div class="container">
+
+                        <div class="section section_goal">
+                            <div class="goal">
+                                <aside class="goal__aside goal__aside_points">
+                                    <div class="progress-bar progress-bar_fail">
+                                        <div class="progress-bar__title">
+                                            Goal milestones
+                                        </div>
+                                        <div class="progress-bar__content">
+                                            <div class="progress-bar__field">
+                                                <div class="progress-bar__fill" style="height: 38px;"></div>
+                                            </div>
+                                            <div class="progress-bar__steps">
+                                                <div class="progress-bar__step progress-bar__step_complete">
+                                                    <div class="progress-bar__percentage" style="height: calc(100% + 4px);"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$100,000</div>
+                                                    <div class="progress-bar__name">Lorem ipsum dolor sit amet</div>
+                                                    <div class="milestone milestone_fail">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="@img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar loadbar_milestone loadbar_fail">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step progress-bar__step_complete">
+                                                    <div class="progress-bar__percentage" style="height: calc(54% + 4px);"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$150,000</div>
+                                                    <div class="progress-bar__name">Quisque venenatis, mauris a cursus egestas</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="@img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step ">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$250,000</div>
+                                                    <div class="progress-bar__name">Sed ultricies ipsum in ex volutpat</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="@img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step progress-bar__step_fail">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$300,000</div>
+                                                    <div class="progress-bar__name">Mauris sagittis ultrices malesuada. Nunc eu sagittis mauris</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="@img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-bar__step">
+                                                    <div class="progress-bar__percentage"></div>
+                                                    <div class="progress-bar__pin"></div>
+                                                    <div class="progress-bar__sum">$450,000</div>
+                                                    <div class="progress-bar__name">Duis sit amet laoreet nibh</div>
+                                                    <div class="milestone">
+                                                        <div class="milestone__wrapper">
+                                                            <div class="milestone__header">
+                                                                <div class="milestone__image">
+                                                                    <img src="@img/thumbnail.png" alt="Lorem ipsum dolor sit amet, consectetur adipis" width="90">
+                                                                </div>
+                                                                <div class="milestone__info">
+                                                                    <button class="milestone__close"></button>
+                                                                    <div class="milestone__title">Lorem ipsum dolor sit amet, consectetur adipis</div>
+                                                                    <div class="milestone__goal">
+                                                                        <div class="milestone__target">Raised: <span>$25,000</span></div>
+                                                                        <div class="milestone__target">Target: <span>$100,000</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="milestone__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, purus vitae bibendum eleifend, nulla metus facilisis erat, porttitor tincidunt risus nisl sed eros. </div>
+                                                            <div class="loadbar">
+                                                                <div class="loadbar__field">
+                                                                    <div class="loadbar__fill" style="width: 25%;"></div>
+                                                                </div>
+                                                                <div class="loadbar__percentage">25%</div>
+                                                            </div>
+                                                            <a href="#milestone" class="milestone__more popup-trigger" data-popup="milestone">See details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                                <article class="goal__article">
+                                    <div class="goal__text">
+                                        <h2>Lorem ipsum dolor</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo a
+                                            mauris fermentum sodales. Cras sed nulla placerat, venenatis odio quis,
+                                            faucibus urna. Integer id suscipit nisl. Integer eu laoreet mauris. Nunc
+                                            molestie eu orci eu tincidunt. Sed feugiat ultrices dui sit amet vulputate.
+                                            Morbi eget iaculis dui. Curabitur euismod lobortis ultricies. Integer a elit
+                                            imperdiet, dictum urna at, dignissim nisl. Vivamus vel venenatis tortor.
+                                            Maecenas et nibh vitae ante euismod placerat nec in risus.</p>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                                        <h2>Lorem ipsum dolor</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo a
+                                            mauris fermentum sodales. Cras sed nulla placerat, venenatis odio quis,
+                                            faucibus urna. Integer id suscipit nisl. Integer eu laoreet mauris. Nunc
+                                            molestie eu orci eu tincidunt. Sed feugiat ultrices dui sit amet vulputate.
+                                            Morbi eget iaculis dui. Curabitur euismod lobortis ultricies. Integer a elit
+                                            imperdiet, dictum urna at, dignissim nisl. Vivamus vel venenatis tortor.
+                                            Maecenas et nibh vitae ante euismod placerat nec in risus.</p>
+                                    </div>
+
+                                </article>
+                                <aside class="goal__aside">
+                                    <div class="top-donators">
+                                        <div class="top-donators__title">Top-15 donators</div>
+                                        <div class="top-donators__donators">
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                            <div class="donator">
+                                                <span class="avatar avatar_author"><img
+                                                        src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        alt="donator name" class="lazy"
+                                                        data-src="https://alpha.serg.agency/wp-content/uploads/2023/03/78489894-2-80x80.jpg"
+                                                        data-ll-status="loaded"></span>
+                                                <div class="donator__name">Consectetur adipis</div>
+                                                <span class="level level_small level_1"></span>
+                                                <div class="donator__sum">$90,000</div>
+                                            </div>
+                                        </div>
+                                        <button class="top-donators__button">
+                                            See all
+                                            <img src="@img/ico/arrow-down-bold.svg" alt="arrow" width="12">
+                                        </button>
+                                    </div>
+                                    <div class="mailing">
+                                        <div class="mailing__title">Free donation</div>
+                                        <div class="mailing__subtitle">Support the hub for no reward, just because it speaks to you.</div>
+                                        <input type="text" placeholder="Enter amount">
+                                        <a href="#" class="button button_pink popup-trigger" data-popup="donate" data-hub="1236" data-save="fc_c2"><span class="button__text"><img src="https://alpha.serg.agency/wp-content/themes/main/img/icons/donate.svg" style="margin-top: -5px;vertical-align:middle"> Donate</span></a>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <script>jQuery("#hubID").val("1236"); jQuery("#cpw-1").val("15.00").attr("type", "number").attr("min", "1").attr("max", "100000").attr("step", "0.01").attr("placeholder", "Minimum $1");</script>
+        </div>
+        @@include('html/footer.html', {})
+        @@include('html/pop-up.html', {})
+
+
+        <script type="text/javascript">
+            (function () {
+                var c = document.body.className;
+                c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+                document.body.className = c;
+            })();
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7"
+            id="swv-js"></script>
+        <script type="text/javascript" id="contact-form-7-js-extra">
+            /* <![CDATA[ */
+            var wpcf7 = { "api": { "root": "https:\/\/alpha.serg.agency\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7"
+            id="contact-form-7-js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js"
+            id="jQueryMobile-js"></script>
+        <script type="text/javascript" src="https://alpha.serg.agency/wp-content/themes/main/js/scripts.js"
+            id="main-js"></script>
+        <script type="text/javascript" id="ajax-followed-js-extra">
+            /* <![CDATA[ */
+            var myAjax = { "ajaxurl": "https:\/\/alpha.serg.agency\/wp-admin\/admin-ajax.php" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/themes/main/js/ajax-followed.js?ver=1.0.0"
+            id="ajax-followed-js"></script>
+        <script type="text/javascript" id="ajax-loadmore-js-extra">
+            /* <![CDATA[ */
+            var myAjax = { "ajaxurl": "https:\/\/alpha.serg.agency\/wp-admin\/admin-ajax.php" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/themes/main/js/ajax-loadmore.js?ver=1.0.0"
+            id="ajax-loadmore-js"></script>
+        <script type="text/javascript" id="wc-single-product-js-extra">
+            /* <![CDATA[ */
+            var wc_single_product_params = { "i18n_required_rating_text": "Please select a rating", "review_rating_required": "yes", "flexslider": { "rtl": false, "animation": "slide", "smoothHeight": true, "directionNav": false, "controlNav": "thumbnails", "slideshow": false, "animationSpeed": 500, "animationLoop": false, "allowOneSlide": false }, "zoom_enabled": "", "zoom_options": [], "photoswipe_enabled": "", "photoswipe_options": { "shareEl": false, "closeOnScroll": false, "history": false, "hideAnimationDuration": 0, "showAnimationDuration": 0 }, "flexslider_enabled": "" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=7.8.1"
+            id="wc-single-product-js"></script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2"
+            id="accounting-js"></script>
+        <script type="text/javascript" id="woocommerce-cpw-js-extra">
+            /* <![CDATA[ */
+            var woocommerce_cpw_params = { "currency_format_num_decimals": "2", "currency_format_symbol": "$", "currency_format_decimal_sep": ".", "currency_format_thousand_sep": ",", "currency_format": "%s%v", "annual_price_factors": { "day": "365", "week": "52", "month": "12", "year": "1" }, "i18n_subscription_string": "%price \/ %period", "trim_zeros": "" };
+/* ]]> */
+        </script>
+        <script type="text/javascript"
+            src="https://alpha.serg.agency/wp-content/plugins/custom-price-for-woocommerce/vendor_prefixed/wpdesk/custom-price-for-woocommerce-core//assets/js/frontend/front.js?ver=1688635607"
+            id="woocommerce-cpw-js"></script>
+
+
+    </body>
+
+
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>

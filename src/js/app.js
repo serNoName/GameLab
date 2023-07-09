@@ -1026,4 +1026,43 @@ jQuery(function () {
         setTimeout(jQuery("#password-change").fadeIn(200), 200);
       });
   });
+
+  //temp scripts
+  if (isTouchDevice()) {
+    jQuery(".progress-bar__step").click(function(){
+      jQuery(".milestone").stop().fadeOut(200);
+      const milestone = jQuery(this).find(".milestone");
+      milestone.stop().fadeIn(200)
+    })
+
+  } else {
+    let timerMilesone;
+    jQuery(".progress-bar__step").hover(
+      function (e) {
+        clearTimeout(timerMilesone);
+
+        jQuery(".milestone").stop().fadeOut(200);
+        const milestone = jQuery(this).find(".milestone");
+
+        milestone.stop().fadeIn(200);
+      },
+      function () {
+        const milestone = jQuery(this).find(".milestone");
+
+        timerMilesone = setTimeout(() => {
+          milestone.stop().fadeOut(200);
+        }, 300);
+      }
+    );
+  }
+
+  jQuery(".milestone__close").click(function (e) {
+    e.preventDefault();
+    jQuery(this).parents(".milestone").stop().fadeOut(200);
+  });
+
+  function isTouchDevice() {
+    if ("ontouchstart" in window || navigator.maxTouchPoints) return true;
+    return;
+  }
 });
