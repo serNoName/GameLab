@@ -7524,6 +7524,12 @@ form.woocommerce-checkout label,
         flex-direction: column;
         gap: 16px;
         z-index: 2;
+        .card_tier {
+            width: 100%;
+            margin: 0;
+            align-self: center;
+            // max-width: none;
+        }
     }
     &__text {
         h2 {
