@@ -3662,6 +3662,10 @@ Card
 .card_goal {
     width: calc(50% - 16px);
     margin: 0 8px 20px;
+    border-top-color: #7D47D5;
+    border-right-color: #6434B2;
+    border-bottom-color: #4D2292;
+    border-left-color: #6434B2;
 
     .user-card__name {
         margin-left: 4px;
