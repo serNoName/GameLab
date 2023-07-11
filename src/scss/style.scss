@@ -7651,6 +7651,7 @@ form.woocommerce-checkout label,
         width: 16px;
         height: 16px;
         border-radius: 50%;
+        box-shadow: 0px 8px 12px 0px rgba(21, 21, 27, 0.40);
         background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0) 100%),
             radial-gradient(100% 100% at 50% 0%, #6B6B72 0%, #717178 0.01%, #4B4B53 100%);
     }
@@ -7694,7 +7695,10 @@ form.woocommerce-checkout label,
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 140%;
-
+                }
+                &__pin {
+                    width: 24px;
+                    height: 24px;
                 }
             }
         }
