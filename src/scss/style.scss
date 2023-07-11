@@ -2209,6 +2209,22 @@ Buttons
     border-color: #424250 #2c2c3a #22222d;
 }
 
+.button_glassy {
+    border-color: #585862 #43434D #23232F;
+    box-shadow: 0px 6px 36px 0px #1D1D24;
+    &:after {
+        background: linear-gradient(180deg, rgba(46, 46, 61, 0.68) 68.43%, rgba(36, 36, 48, 0.95) 95%);
+    }
+    &:before {
+        background: linear-gradient(180deg, rgba(71, 71, 87, 0.68) 68.43%, rgba(44, 44, 58, 0.95) 95%);
+    }
+    &:active {
+        &::after {
+            background: linear-gradient(180deg, rgba(42, 42, 56, 0.68) 68.43%, rgba(27, 27, 38, 0.95) 95%);
+        }
+    }
+}
+
 .button_red::before {
     transition: opacity .15s ease;
     opacity: 0;
@@ -3355,6 +3371,7 @@ Post
 .icon-number {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #A9AAB6;
     font-size: 15px;
     font-weight: 600;
@@ -3363,11 +3380,18 @@ Post
 
     &_card {
         margin: 0;
-
         .icon-number__icon {
+            height: 16px;
             margin-right: 4px;
+            img {
+                vertical-align: top;
+            }
         }
     }
+    .level_small {
+        margin-left: 4px;
+    }
+
 }
 
 
@@ -3432,6 +3456,13 @@ Post
     vertical-align: middle;
     display: inline-block;
     transition: all .2s ease;
+    &__icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        mask: contain;
+        background: rgba(242, 242, 242, 1);
+    }
 }
 
 .badge_big {
@@ -3473,6 +3504,15 @@ a.badge:active {
     color: #F2F2F2;
     padding: 4px 8px;
     line-height: 1.6;
+}
+
+.badge_goal {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    padding: 7px 8px;
+    letter-spacing: 0.3px;
 }
 
 .badge_verified img {
@@ -4985,6 +5025,13 @@ Hubs and events list
 
 .hubs-list__search_button {
     text-align: right;
+}
+.hubs-list__search_goal {
+    display: flex;
+    gap: 16px;
+    justify-content: right;
+    min-width: calc(100% + 60px);
+    margin-left: -30px;
 }
 
 .loadmore-button {
@@ -7636,6 +7683,21 @@ form.woocommerce-checkout label,
                 }
             }
         }
+        &_current {
+            .progress-bar {
+                &__sum {
+                    color: var(--accent-white, #F2F2F2);
+                    font-size: 20px;
+                }
+                &__name {
+                    color: var(--accent-white, #F2F2F2);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 140%;
+
+                }
+            }
+        }
     }
     &__sum {
         position: relative;
@@ -7843,6 +7905,12 @@ form.woocommerce-checkout label,
     .goals, .goal {
         margin-left: 0;
         width: 100%;
+    }
+    .hubs-list__search_goal {
+        min-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        flex-wrap: wrap;
     }
 }
 
@@ -8287,6 +8355,18 @@ form.woocommerce-checkout label,
         }
         &_hero {
             margin: 0 !important;
+            .card__short-info {
+                position: relative;
+                width: 100%;
+            }
+            .icon-number {
+                &:first-of-type {
+                    position: absolute;
+                    right: 0;
+                    top: -26px;
+                    white-space: nowrap;
+                }
+            }
         }
     }
 
