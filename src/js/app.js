@@ -1027,7 +1027,12 @@ jQuery(function () {
       });
   });
 
-  //temp scripts
+
+
+
+  // jQuery('')
+
+  //milestone
   if (isTouchDevice()) {
     jQuery(".progress-bar__step").click(function(){
       jQuery(".milestone").stop().fadeOut(200);
