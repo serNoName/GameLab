@@ -1027,19 +1027,21 @@ jQuery(function () {
       });
   });
 
+  jQuery("[data-target-content]").click(function () {
+    const target = jQuery(this).attr("data-target-content");
 
-
-
-  // jQuery('')
+    jQuery(this).toggleClass("active");
+    jQuery(`[data-content="${target}"]`).stop().slideToggle(300);
+  });
 
   //milestone
   if (isTouchDevice()) {
-    jQuery(".progress-bar__step").click(function(){
-      jQuery(".milestone").stop().fadeOut(200);
+    jQuery(".progress-bar__step").click(function () {
       const milestone = jQuery(this).find(".milestone");
-      milestone.stop().fadeIn(200)
-    })
 
+      jQuery(".milestone").stop().fadeOut(200);
+      milestone.stop().fadeIn(200);
+    });
   } else {
     let timerMilesone;
     jQuery(".progress-bar__step").hover(

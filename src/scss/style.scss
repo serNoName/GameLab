@@ -810,7 +810,7 @@ Slick
         max-width: 600px
     }
     &_goal {
-        max-width: 608px;
+        // max-width: 608px;
     }
 }
 
@@ -1960,6 +1960,7 @@ User-area in sidebar
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    overflow: hidden;
 }
 
 .level_small {
@@ -2042,6 +2043,10 @@ User-area in sidebar
     transition: opacity .2s ease;
     cursor: default;
     transform: translate3d(-50%, 0, 0);
+}
+
+.level:hover {
+    overflow: visible;
 }
 
 .level:hover .level__info {
@@ -7482,13 +7487,24 @@ form.woocommerce-checkout label,
         line-height: normal;
         letter-spacing: 0.32px;
         border: none;
+        width: fit-content;
+        img {
+            transition: .3s transform;
+        }
+        &.active {
+            img {
+                transform: rotate(180deg);
+            }
+        }
     }
 }
 
 .goal {
     display: grid;
-    grid-template-columns: 320px auto 320px;
+    grid-template-columns: 320px calc(100% - 672px) 320px;
     gap: 16px;
+    width: calc(100% + 60px);
+    margin-left: -30px;
     &__article {
         padding: 24px;
         padding: 24px;
@@ -7501,12 +7517,13 @@ form.woocommerce-checkout label,
         border-right-color: #41414B;
         border-bottom-color: #24242F;
         border-left-color: #41414B;
-        z-index: -1;
+        // z-index: -1;
     }
     &__aside {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        z-index: 2;
     }
     &__text {
         h2 {
@@ -7817,7 +7834,7 @@ form.woocommerce-checkout label,
 }
 
 @media (max-width: 1660px) {
-    .goals {
+    .goals, .goal {
         margin-left: 0;
         width: 100%;
     }
@@ -7842,6 +7859,9 @@ form.woocommerce-checkout label,
 
     .quick-nav {
         left: 300px;
+    }
+    .goal {
+        grid-template-columns: 300px calc(100% - 632px) 300px;
     }
 }
 
@@ -7955,7 +7975,7 @@ form.woocommerce-checkout label,
     }
     .goal {
         grid-template-areas: 'a as''a as2';
-        grid-template-columns: auto 300px;
+        grid-template-columns: calc(100% - 316px) 300px;
         &__article {
             grid-area: a;
         }
@@ -7965,6 +7985,7 @@ form.woocommerce-checkout label,
             }
             &:last-child {
                 grid-area: as2;
+                z-index: 0;
             }
             &_points {
                 z-index: 2;
@@ -9253,7 +9274,7 @@ form.woocommerce-checkout label,
     }
     .goal {
         grid-template-areas: 'a''as''as2';
-        grid-template-columns: 1fr;
+        grid-template-columns:100%;
     }
     .milestone {
         left: -54px;
